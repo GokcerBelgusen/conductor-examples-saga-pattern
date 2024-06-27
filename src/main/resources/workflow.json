@@ -1,0 +1,55 @@
+{
+  "ownerApp": null,
+  "createTime": 1719486905489,
+  "updateTime": 1719488482027,
+  "createdBy": null,
+  "updatedBy": null,
+  "accessPolicy": {},
+  "name": "HelloWorld101",
+  "description": "Edit or extend this sample workflow. Set the workflow name to get started",
+  "version": 5,
+  "tasks": [
+    {
+      "name": "hello_world_task",
+      "taskReferenceName": "hello_world_task",
+      "description": null,
+      "inputParameters": {
+        "name": "${workflow.input.name}"
+      },
+      "type": "SIMPLE",
+      "dynamicTaskNameParam": null,
+      "caseValueParam": null,
+      "caseExpression": null,
+      "scriptExpression": null,
+      "dynamicForkJoinTasksParam": null,
+      "dynamicForkTasksParam": null,
+      "dynamicForkTasksInputParamName": null,
+      "startDelay": 0,
+      "subWorkflowParam": null,
+      "sink": null,
+      "optional": false,
+      "taskDefinition": null,
+      "rateLimited": null,
+      "asyncComplete": false,
+      "loopCondition": null,
+      "retryCount": null,
+      "evaluatorType": null,
+      "expression": null
+    }
+  ],
+  "inputParameters": [
+    "name"
+  ],
+  "outputParameters": {
+    "response": "${hello_world_task.output.response}"
+  },
+  "failureWorkflow": null,
+  "schemaVersion": 2,
+  "restartable": true,
+  "workflowStatusListenerEnabled": false,
+  "ownerEmail": "viren@orkes.io",
+  "timeoutPolicy": "ALERT_ONLY",
+  "timeoutSeconds": 0,
+  "variables": {},
+  "inputTemplate": {}
+}

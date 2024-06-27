@@ -14,9 +14,10 @@ import java.util.Objects;
 
 @AllArgsConstructor
 @SpringBootApplication
-@ComponentScan(basePackages = {"io.orkes"})
+@ComponentScan(basePackages = {"io.orkes","hello"})
 public class SagaApplication {
 
+	// -Djavax.net.ssl.trustStore="play.orkes.io.jks"
 	private static final BaseDAO db = new BaseDAO("jdbc:sqlite:cab_saga.db");
 
 	public static void main(String[] args) {
